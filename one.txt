@@ -1,1 +1,37 @@
+Git Commands:
+$ cd ..
+$ cd ../
+$ open . (Open the current folder. Here the dot means the current folder.)
 
+$ mkdir [a_new_folder_name] (creating a direction/folder, naming it after command 'mkdir'.)
+$ git init
+$ touch [name.txt] (inside the folder/direction, we create a text file.)
+
+$ ls -la (The ‘ls -la’ command lets us view hidden files and folders.)
+$ git clone {
+
+1. Creates a new folder on your Mac (my local folder) with the name of the project.
+2. Initializes Git inside that folder (it runs git init for you behind the scenes).
+3. Downloads every file and folder from the remote server (my GitHub repository) into your new local folder.
+4. Download the history, so you can see every change ever made to that project.
+
+}
+
+$ git status (tells us that which file is modified)
+
+
+At any point, we can simply run the 'git status' command to see which files have been modified
+or updated.
+
+The Staging Area (also called the "Index") is like a loading dock or a drafting table for
+your changes. It is a middle ground between your actual files (Working Directory) and
+your permanent history (Repository)
+
+In git terminology, the process of moving changes from the working directory to the staging area
+is called adding.
+Simply put ‘git add .’ that means telling git I want to keep this change.
+
+$ git add .
+$ git add [file_name]
+$ git add --all
+$ git add -A

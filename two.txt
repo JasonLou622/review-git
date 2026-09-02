@@ -1,1 +1,40 @@
 
+#### One. How to Check What is Inside a File ####
+
+1. cat (Concatenate): Best for short files. It dumps the entire text onto your screen at
+once.
+Ex. cat filename.txt
+
+2. less: Best for long files. It opens the file in a window where
+you can scroll using the arrow keys.
+
+Ex. less filename.txt (Press Q to quit and go back to your prompt.)
+
+3. head or tail: Used to see just the first or last 10 lines of a file (great for checking logs in Cybersecurity). (This is a practice of 'echo' command): Add something new to the end.
+
+
+#### Two. How to Write to a File ####
+
+There are two ways to do this: a "quick shortcut" for single lines and a "text editor" for actual writing.
+
+---- The Quick Way (Redirection) ----
+
+If you just want to send a single line of text into a file without opening an editor, use the echo command combined with a bracket.
+
+● Overwrite everything: This creates the file (or wipes it) and puts your text inside.
+
+echo "Hello World" > filename.txt
+
+● Append (Add to the end): This adds your text to the bottom of the file without deleting what's already there.
+
+echo "New line of data" >> filename.txt
+
+---- The "Pro" Way (The Nano Editor) ----
+
+For actual writing or editing, Mac has a built-in terminal editor called
+Nano. It feels more like a simplified version of NotePad or TextEdit.
+
+1. Open the file: nano filename.txt
+2. Type your text: You can use your keyboard just like a regular document.
+3. Save: Press Control + O (the letter O, then Enter).
+4. Exit: Press Control + X.
