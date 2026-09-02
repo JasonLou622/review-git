@@ -53,6 +53,6 @@ $ git log (To view commit hash (or commit ID))
 $ git rm [name_file] (Ex. git rm four.txt -- remove the file + git add . both at once.)
 
 $ git rm -f [name] (Ex. git rm -f four.txt -- to force removal a .txt file/ Completely deletes the file.)
-$ git log --oneline
+$ git log --oneline (Showing the HEAD address/ or ID commit in the single-line format for each commit instead of the detailed multi-line default.)
 
 $ git push origin main
