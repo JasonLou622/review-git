@@ -1,4 +1,4 @@
-Git Commands:
+Git Command Descriptions:
 $ cd ..
 $ cd ../
 $ open . (Open the current folder. Here the dot means the current folder.)
@@ -35,3 +35,11 @@ $ git add .
 $ git add [file_name]
 $ git add --all
 $ git add -A
+
+$ git reset --hard HEAD (reset commits and erase all local file changes back to the last commit
+$ git restore . (to throw away your actual unstaged edits completely.)
+$ git rm --cached -r . (to un-stage files in a repo with zero commits.)
+
+$ git restore --staged . (To unstage all staged files without touching your code)
+$ git log (To view commit hash (or commit ID))
+$ git push origin main
