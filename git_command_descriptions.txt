@@ -1,13 +1,7 @@
 Git Command Descriptions:
-$ cd ..
-$ cd ../
-$ open . (Open the current folder. Here the dot means the current folder.)
 
-$ mkdir [a_new_folder_name] (creating a direction/folder, naming it after command 'mkdir'.)
 $ git init
-$ touch [name.txt] (inside the folder/direction, we create a text file.)
-
-$ ls -la (The ‘ls -la’ command lets us view hidden files and folders.)
+$ git status (tells us that which file is modified)
 $ git clone {
 
 1. Creates a new folder on your Mac (my local folder) with the name of the project.
@@ -16,8 +10,6 @@ $ git clone {
 4. Download the history, so you can see every change ever made to that project.
 
 }
-
-$ git status (tells us that which file is modified)
 
 
 At any point, we can simply run the 'git status' command to see which files have been modified
@@ -32,14 +24,14 @@ is called adding.
 Simply put ‘git add .’ that means telling git I want to keep this change.
 
 $ git add .
-$ git add [file_name]
+$ git add <file_name>
 $ git add --all
 $ git add -A
 
 $ git add * (stages all visible changes except for deleted files. In other words, if a file has been deleted, this command won’t add the changing of deleted file to the staging area.
 That’s the key difference between the star and the dot & the -A options.) 
 
-$ git add * [.extension] (We can also stage files by extension. If I want to stage all .txt files, we will write ‘git add * .txt’, excluding deleted ones. It won’t include the files inside subfolders either.
+$ git add * <.extension> (We can also stage files by extension. If I want to stage all .txt files, we will write ‘git add * .txt’, excluding deleted ones. It won’t include the files inside subfolders either.
 
 $ git commit -m "Comments." (It means we are committing and saving our changes
 permanently.)
@@ -50,9 +42,9 @@ $ git rm --cached -r . (to un-stage files in a repo with zero commits.)
 
 $ git restore --staged . (To unstage all staged files without touching your code)
 $ git log (To view commit hash (or commit ID))
-$ git rm [name_file] (Ex. git rm four.txt -- remove the file + git add . both at once.)
+$ git rm <name_file> (Ex. git rm four.txt -- remove the file + git add . both at once.)
 
-$ git rm -f [name] (Ex. git rm -f four.txt -- to force removal a .txt file/ Completely deletes the file.)
+$ git rm -f <name> (Ex. git rm -f four.txt -- to force removal a .txt file/ Completely deletes the file.)
 $ git log --oneline (Showing the HEAD address/ or ID commit in the single-line format for each commit instead of the detailed multi-line default.)
 
 $ git push origin main
