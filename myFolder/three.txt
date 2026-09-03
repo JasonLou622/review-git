@@ -1,1 +1,17 @@
+Branching Guidance:
+
+Create and switch to it in one step:
+$ git checkout -b <your-new-branch-name>
+$ git switch -c <your-new-branch-name>
+
+Alternative: Two-step method
+1. Create the branch:
+$ git branch <your-new-branch-name>
+2. Switch over to it:
+$ git switch <your-new-branch-name>
+
+To verify which branch you are on:
+$ git branch (The active branch will be highlighted with an asterisk (*).)
+
+staging
 
