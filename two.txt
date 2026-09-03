@@ -27,7 +27,11 @@ echo "Hello World" > filename.txt
 
 ● Append (Add to the end): This adds your text to the bottom of the file without deleting what's already there.
 
-echo "New line of data" >> filename.txt
+echo "This is the first line." >> filename.txt
+echo "This is a new line." >> filename.txt
+
+Alternative -- Use '-e' with '\n' in a single string
+echo -e "This is the first line.\nThis is a new line." >> name.txt
 
 ---- The "Pro" Way (The Nano Editor) ----
 
