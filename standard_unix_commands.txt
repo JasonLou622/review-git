@@ -63,3 +63,9 @@ For actual writing or editing, Mac has a built-in terminal editor called nano. I
 4. Exit: Press Control + X.
 
 $ control + L (clean the terminal without deleted history.)
+
+Delete the directory:
+If the directory (Ex. myFolder) is completely empty, remove it with:
+$ rmdir README.md
+If it contains files or you want to ensure it is deleted recursively, use:
+$ rm -rf README.md
